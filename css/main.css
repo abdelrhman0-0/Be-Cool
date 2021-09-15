@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 16px;
+}
+#home {
+  background-color: #1E202B;
+}
+header{
+  background-color: #1E202B;
+  padding: 30px 0;
+}
+.fa-cloud{
+  color: #009AD8 !important;
+}
+.myCont{
+  background-image:url(../imgs/allison-navarro-iar02d6qdPI-unsplash.jpg);
+  background-size: cover;
+  background-position:center;
+  
+}
+.main-color{
+  color: #BFC1C8;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav-item{
+  margin: 0 10px !important;
+
+}
+
+.nav-link{
+  transition: all 0.4s;
+  border-radius: 50rem;
+  padding:5px 20px !important;
+  border: 3px solid #1E202B;
+
+
+
+}
+.nav-link:hover {
+  border: 3px solid #05A2DA;
+  color:#05A2DA !important ;
+  padding:5px 20px !important;
+
+}
+.active{
+  border: 3px solid #05A2DA;
+  padding:5px 20px !important;
+  color:#05A2DA !important ;
+}
+
+.card {
+  background-color: #323544;
+  width: 100% !important;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  
+}
+.weather-icons {
+  color: #8E8F94;
+  padding-top: 20px;
+}
+
+
+h2{
+  font-size: 4rem ;
+
+}
+
+.currentIcon{
+  width: 30%;
+}
+
+.card span {
+  color: #05A2DA;
+  padding: 40px 0 30px;
+}
+
+.card h6 {
+  color: #8E8F94;
+}
+
+footer{
+  background-color:#262936;
+}
+
+.input-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.sub-btn{
+  position: absolute;
+  right: 0;
+  background-color:#009AD8 ;
+
+}
+
+
+.social-icons{
+  color: #009AD8;
+}
+.social-icons i{
+  font-size: 1.25rem;
+  background-color: #1E202B;
+  border-radius: 50%;
+  transition: all 0.4s;
+  cursor: pointer;
+  margin-right: 5px;
+
+
+}
+
+.social-icons i:hover{
+  background-color:#009AD8;
+  color: white;
+
+
+}
+.fa-facebook-f{
+  padding: 12px 17px;
+
+}
+.fa-twitter,.fa-google-plus,.fa-pinterest{
+  padding: 12px;
+}
