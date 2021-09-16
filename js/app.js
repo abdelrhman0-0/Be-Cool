@@ -9,7 +9,7 @@ let col ='';
 
 
 async function getData(city='cairo'){
-    let url = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=3`
+    let url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=3`
     let res = await fetch(url);
     data = await res.json();
     displayAll()
@@ -96,7 +96,7 @@ row.innerHTML= col
 }
 
 async function searchReq(){
-    let firstUrl = `http://api.weatherapi.com/v1/search.json?key=${apiKey}&q=${findInput.value}&days=3`
+    let firstUrl = `https://api.weatherapi.com/v1/search.json?key=${apiKey}&q=${findInput.value}&days=3`
     let res = await fetch(firstUrl);
     SearchData = await res.json();
     console.log(SearchData);
@@ -104,7 +104,7 @@ async function searchReq(){
     // displayAll()
 }
 async function getDataAfterSearch(dataAfterSearch){
-    let url = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${dataAfterSearch[1].name}&days=3`
+    let url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${dataAfterSearch[1].name}&days=3`
     let res = await fetch(url);
     data = await res.json();
     console.log(data);
