@@ -55,6 +55,22 @@ function displayCurrent(){
  `
 
 }
+ 
+/* What is going on here is a check , when we ask for date with
+ the index of tommorow(+1) or after tommorow(+2),
+  if this index is equal to date array length it will start with index 0 
+  it will return "Sunday" , and if the index is greater than length it will return 
+  "Monday"*/
+function whatIf(index){
+  if ((myDate.getDay()+index) == (day.length)){
+    return day[0];
+
+  }else if(myDate.getDay()+index > day.length){
+    return day[1]
+  }else{
+    return day[myDate.getDay()+index]
+  }
+}
 
 function displayDay(index){
     
@@ -65,7 +81,7 @@ function displayDay(index){
     <div class="card-header main-color d-flex justify-content-between ">
     
     <div> 
-        ${day[myDate.getDay()+index]}
+        ${whatIf(index)}
     </div>
     <div> 
      ${data.forecast.forecastday[index].date}
